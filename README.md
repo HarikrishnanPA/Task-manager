@@ -6,7 +6,7 @@ A simple and intuitive Task Manager web app . Users can create, update, and dele
 
 ## Tech Stack
 
-![Screenshot](./screenshots/taskmanager home.jpg)
+![Screenshot](screenshots/taskmanager home.jpg)
 
 
 ## 📸 UI Screenshots
