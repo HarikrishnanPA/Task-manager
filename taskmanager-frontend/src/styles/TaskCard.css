@@ -1,0 +1,74 @@
+.task-card {
+  background-color: #e0e0e0;
+  margin: 1rem 0;
+  border-radius: 12px;
+  font-family: 'Courier New', monospace;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+  border: 1px solid black;
+}
+
+.task-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background-color: #BFB1B1;
+  padding: 0.3rem 0.8rem;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  border-bottom: 1px solid black;
+  
+}
+
+.task-title {
+  font-size: 1.2rem; /* Equivalent to ~36px */
+  font-weight: bold;
+  margin: 0;
+}
+
+.task-deadline {
+  font-weight: bold;
+  font-size: 1.2rem;
+}
+
+.task-desc {
+  padding: 0 0.5rem;
+  font-size: 0.9rem; /* Equivalent to ~24px */
+  margin: 0rem 0rem;
+  white-space: pre-wrap;
+  line-height: 1.5;
+  color: #333;
+}
+
+.task-footer {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 0 0.5rem;
+}
+
+.delete-btn {
+  background: none;
+  border: none;
+  font-size: 1.2rem;
+  cursor: pointer;
+}
+
+.delete-icon {
+  width: 16px;    /* smaller icon size */
+  height: 16px;
+}
+
+.done-label {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  font-weight: bold;
+}
+
+.overdue-mark {
+  color: red;
+  font-weight: bold;
+  margin-left: 5px;
+}

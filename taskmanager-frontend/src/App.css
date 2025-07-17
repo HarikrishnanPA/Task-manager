@@ -1,0 +1,144 @@
+/* Global layout styling */
+@import url('https://fonts.googleapis.com/css2?family=Jersey+10&display=swap');
+
+
+body {
+  margin: 0;
+  background-color: #7a74c0; /* Same as header */
+}
+
+.main-content {
+  flex-grow: 1;
+  transition: all 0.3s ease;
+  background-color: #ffffff; /* Optional: to avoid sidebar color bleeding in */
+  display: flex;
+  flex-direction: column;
+}
+
+.app-container {
+  display: flex;
+  height: 100vh;
+  font-family: 'Segoe UI', sans-serif;
+  background-color: #FBE4D6;
+}
+
+.app-header {
+  height: 70px;
+  background-color: #7a74c0;
+  color: white;
+  display: flex;
+  align-items: center;
+  padding: 0 1rem;
+  box-shadow: 0 2px 5px rgba(0,0,0,0.1);
+  font-family: 'Jersey 10', sans-serif;
+  border: 1px solid black;
+  border-left: none;
+}
+
+.main-panel {
+  flex: 1;
+  padding: 20px;
+  position: relative;
+  overflow-y: auto;
+}
+
+.heading {
+  font-size: 2rem;
+  margin-bottom: 20px;
+  font-weight: 600;
+  color: #333;
+}
+
+.header-title {
+  font-size: 60px;
+  margin: 0;
+}
+
+
+/* src/App.css */
+
+.App {
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+.app-wrapper {
+  display: flex;
+  height: 100vh;
+  width: 100%;
+}
+
+.task-list-container {
+  flex-grow: 1;
+  padding: 1.5rem;
+  overflow-y: auto;
+}
+
+/* Floating Add button */
+.add-task-button {
+  position: fixed;
+  bottom: 2rem;
+  right: 2rem;
+  width: 56px;
+  height: 56px;
+  font-size: 30px;
+  border-radius: 50%;
+  background-color: #7a74c0;
+  color: white;
+  border: none;
+  cursor: pointer;
+  border: 1px solid black;
+}
+
+
+/* Toggle button stays fixed on screen */
+.toggle-sidebar-btn {
+  background: none;
+  border: none;
+  font-size: 24px;
+  cursor: pointer;
+  padding: 10px;
+}
+
+.content-wrapper {
+  display: flex;
+  flex-direction: row;
+  flex-grow: 1;
+  min-height: 0;
+}
+
+/* Sidebar styles */
+.sidebar {
+  transition: width 0.3s ease;
+  background-color: #B3B1DF;
+  height: 100vh;
+  overflow: hidden;
+  border: 1px solid black;
+}
+
+.sidebar.open {
+  width: 240px;
+}
+
+.sidebar.closed {
+  width: 60px;
+}
+
+/* Main content expands to remaining space */
+.task-list-container {
+  flex-grow: 1;
+  padding: 1.5rem;
+  background-color: #FBE4D6;
+  transition: all 0.3s ease;
+}
+
+/* Optional: if you want margin instead of flex-based resizing */
+.app-wrapper .sidebar.open + .main-content {
+  margin-left: 0px; /* optional: remove if using flex properly */
+}
+
+.app-wrapper .sidebar.closed + .main-content {
+  margin-left: 0px;
+}
+
