@@ -50,5 +50,5 @@ Navigate to the backend folder and use this command:
 
 Navigate to the frontend folder and use this command:
 
-  -npm install
-  -npm start
+-npm install
+-npm start
